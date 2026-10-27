@@ -4,7 +4,28 @@
 # =============================================================================
 
 # -----------------------------------------------------------------------------
-# 1. Deep Learning Model Checkpoints & Large Binary Weights (>100MB exceeds GitHub limits)
+# 1. LaTeX Manuscripts, Templates & Word Files
+# -----------------------------------------------------------------------------
+*.tex
+Definitions/
+fig2-pdf/
+*.docx
+*.pdf
+
+# -----------------------------------------------------------------------------
+# 2. Markdown Documents & Audit Logs
+# -----------------------------------------------------------------------------
+*.md
+
+# -----------------------------------------------------------------------------
+# 3. Jupyter Notebooks
+# -----------------------------------------------------------------------------
+*.ipynb
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# -----------------------------------------------------------------------------
+# 4. Deep Learning Model Checkpoints & Large Binary Weights (>100MB)
 # Note: Checkpoints are shared via Zenodo / HuggingFace model hub releases.
 # -----------------------------------------------------------------------------
 *.pt
@@ -17,7 +38,7 @@
 outputs/checkpoints/
 
 # -----------------------------------------------------------------------------
-# 2. Raw Medical Datasets, DICOM Files & Compressed Archives
+# 5. Raw Medical Datasets, DICOM Files & Compressed Archives
 # -----------------------------------------------------------------------------
 dataset/
 datasets/
@@ -33,13 +54,13 @@ raw_data/
 *.7z
 
 # -----------------------------------------------------------------------------
-# 3. Patient-Level Raw Prediction Dumps (Summaries preserved in outputs/tables/)
+# 6. Patient-Level Raw Prediction Dumps (Summaries preserved in outputs/tables/)
 # -----------------------------------------------------------------------------
 outputs/predictions/
 outputs/predictions/*.csv
 
 # -----------------------------------------------------------------------------
-# 4. Python Environment, Cache & Bytecode
+# 7. Python Environment, Cache & Bytecode
 # -----------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
@@ -69,12 +90,8 @@ env/
 ENV/
 .venv/
 
-# Jupyter Notebook Cache
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-
 # -----------------------------------------------------------------------------
-# 5. Local Training Logs, Run Audits & Internal Scratch Files
+# 8. Local Training Logs, Run Audits & Internal Scratch Files
 # -----------------------------------------------------------------------------
 *.log
 training_run.log
@@ -87,13 +104,12 @@ write_revised_manuscript.py
 rebuild_supplementary_latex.py
 write_supplementary_manuscript.py
 generate_supplementary_docx.py
+generate_supplementary_docx.py
 TSP_template_original_backup.tex
 scratch/
-Paper.pdf
-Supplementary.pdf
 
 # -----------------------------------------------------------------------------
-# 6. LaTeX Auxiliary Compilation Files
+# 9. LaTeX Auxiliary Compilation Files
 # -----------------------------------------------------------------------------
 *.aux
 *.bbl
@@ -117,7 +133,7 @@ Supplementary.pdf
 *-blx.bib
 
 # -----------------------------------------------------------------------------
-# 7. IDE, Editor & Operating System Metadata
+# 10. IDE, Editor & Operating System Metadata
 # -----------------------------------------------------------------------------
 .vscode/
 .idea/
