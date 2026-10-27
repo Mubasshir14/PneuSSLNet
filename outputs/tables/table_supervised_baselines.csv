@@ -1,0 +1,4 @@
+Model Architecture,Parameters,Accuracy (%),Precision (%),Recall (%),Specificity (%),F1 Score (%),AUROC (%),Brier Score,MCC,Best Epoch,Training Time (s)
+Custom CNN,422050,95.11,95.72,97.66,88.24,96.68,98.27,0.0356,0.8746,15,2093.4
+EfficientNet-B0 (Scratch),4171774,95.79,96.89,97.35,91.6,97.12,99.13,0.0302,0.893,17,2314.1
+ResNet-50 (Scratch),23770562,96.25,97.8,97.04,94.12,97.42,99.29,0.029,0.9056,19,1830.5

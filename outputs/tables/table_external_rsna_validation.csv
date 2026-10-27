@@ -1,0 +1,2 @@
+Cohort,Checkpoint,Total Radiographs,Accuracy (%),Sensitivity (%),Specificity (%),Precision (%),F1 Score (%),AUROC (%),AUPRC (%),Brier Score
+RSNA External Overall,ft_DINO_efficientnet_b0.pt,26684,60.64,91.35,51.7,35.49,51.12,81.0,50.76,0.2592

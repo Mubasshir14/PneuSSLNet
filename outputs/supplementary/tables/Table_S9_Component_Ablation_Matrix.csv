@@ -1,0 +1,7 @@
+Ablation Variant,Pretrain Epochs,Unfreeze Strategy,Test Acc (%),F1-Score (%),AUROC (%)
+Full PneuSSLNet (DINO + 2-Stage UCL),30,Stage 1 (Head) + Stage 2 (Last 3 Blocks),97.15,96.48,99.4
+Full PneuSSLNet (SimCLR + 2-Stage UCL),30,Stage 1 (Head) + Stage 2 (Last 3 Blocks),96.93,96.14,98.96
+A1: Linear Probe Only (Frozen Backbone),30,Stage 1 Only (No Backbone Unfreezing),93.4,92.65,97.1
+A2: 1-Stage Direct Full Fine-Tuning,30,Direct Unfreeze (No Head Warmup),94.85,94.1,97.8
+A3: Light Augmentation Pipeline,30,Standard 2-Stage,95.1,94.35,98.05
+A4: No Self-Supervised Pretraining (From Scratch),0,Supervised Training Only,91.2,90.95,95.4

@@ -1,0 +1,9 @@
+Backbone,Method,Accuracy,Precision,Recall,F1 Score,AUC
+resnet50,SimCLR,94.99,98.22,94.85,96.51,99.04
+resnet50,MoCo,96.13,98.41,96.26,97.32,99.11
+resnet50,BYOL,96.59,98.72,96.57,97.63,98.87
+resnet50,DINO,96.25,99.19,95.63,97.38,99.27
+efficientnet_b0,SimCLR,96.47,98.41,96.72,97.56,99.44
+efficientnet_b0,MoCo,95.45,98.86,94.85,96.82,98.98
+efficientnet_b0,BYOL,96.59,99.04,96.26,97.63,99.28
+efficientnet_b0,DINO,97.38,98.89,97.5,98.19,99.34

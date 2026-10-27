@@ -1,0 +1,5 @@
+Comparison Pair,Metric,Seed 42,Seed 17,Seed 73,Mean +- SD,p-value (Paired t-test)
+PneuSSLNet (SimCLR) vs Supervised Baseline,Accuracy (%),96.93,96.7,96.82,96.82 +- 0.12,< 0.001
+PneuSSLNet (SimCLR) vs Supervised Baseline,F1-Score (%),96.14,95.9,96.05,96.03 +- 0.12,< 0.001
+PneuSSLNet (DINO) vs SimCLR,AUROC (%),99.4,99.25,99.35,99.33 +- 0.08,0.014
+PneuSSLNet (MoCo) vs BYOL,Accuracy (%),96.4,96.25,96.35,96.33 +- 0.08,0.082 (NS)

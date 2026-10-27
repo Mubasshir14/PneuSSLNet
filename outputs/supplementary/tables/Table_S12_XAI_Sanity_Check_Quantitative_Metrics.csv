@@ -1,0 +1,6 @@
+Model Layer Randomization (Adebayo Test),Rank Correlation with Input,Heatmap Degradation
+Trained Reference Model (Baseline),0.742,None (Targeted Focal Opacity Localization)
+Randomize UCL Head (Stage 2 Adapter),0.315,Moderate Edge & Boundary Diffusion
+Randomize Layer 4 (Conv5 Block),0.082,Severe Spatial Degradation (Noise Spread)
+Randomize Layer 3 (Conv4 Block),0.014,Complete Contrast Loss (Artifact Only)
+Fully Cascaded Randomization (All Weights),-0.003,Zero Correlation with Radiograph Anatomy

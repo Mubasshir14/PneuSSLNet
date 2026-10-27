@@ -1,0 +1,5 @@
+RSNA Cohort Subgroup,Total,Accuracy (%),Sensitivity / Recall (%),Specificity (%),F1-Score (%),AUROC (%)
+Primary Challenge (All Cases),26684,82.4,79.5,83.25,68.45,88.9
+Strict Matched Subgroup (Opacity vs Normal),14863,87.15,84.6,88.9,84.1,92.45
+Pediatric Age Subgroup (<= 18 years),1240,89.5,88.1,90.2,88.75,94.1
+Adult Age Subgroup (> 18 years),25444,81.9,78.9,82.8,67.5,88.5

@@ -1,0 +1,10 @@
+Module / Step,Parameter / Description,Value
+Backbone Architectures,Backbone Variants,"ResNet-50 (23.5M params), EfficientNet-B0 (4.0M params)"
+Pretraining Optimization,Optimizer & Weight Decay,"Adam (lr=3e-4, betas=(0.9, 0.999), weight_decay=1e-5)"
+Batch & Resolution,Batch Size & Resolution,"Batch Size=16 (SSL) / 32 (Fine-tuning), Image Size=224x224"
+SimCLR NRPL,Loss & Projector Head,"NT-Xent Loss, Temperature tau=0.5, Projector 2048->512->128"
+MoCo NRPL,Queue & Momentum,"InfoNCE, Queue K=2048, Momentum m=0.999, tau=0.07"
+BYOL NRPL,Target & Predictor,"Symmetric MSE, Target Momentum m=0.996, Predictor 128->512->128"
+DINO NRPL,Multi-crop & Centering,"2 Global (224px) + 2 Local (96px), Student temp=0.1, Teacher temp=0.04"
+UCL Downstream,Two-Stage Scheme,"Stage 1: Frozen Backbone (15 ep, lr=1e-3); Stage 2: Deep Unfreeze (15 ep, lr=1e-4, Cosine Annealing)"
+Inference Firewall,Decision Rules,Primary Threshold=0.5000 (No TTA); Secondary Threshold=Youden J (TTA Enabled)

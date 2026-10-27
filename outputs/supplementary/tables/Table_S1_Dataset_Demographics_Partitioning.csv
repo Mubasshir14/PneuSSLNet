@@ -1,0 +1,6 @@
+Cohort,Split,NORMAL,PNEUMONIA,Total,Percentage
+Internal Development Cohort (Kermany et al.),Train,1108,2991,4099,70.0%
+Internal Development Cohort (Kermany et al.),Validation,238,640,878,15.0%
+Internal Development Cohort (Kermany et al.),Locked Internal Test,237,642,879,15.0%
+External Validation (RSNA Challenge Primary),External Cohort,20672,6012,26684,100.0%
+External Validation (RSNA Strict Matched Subgroup),External Matched,8851,6012,14863,55.7%

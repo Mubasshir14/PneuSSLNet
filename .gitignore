@@ -1,0 +1,133 @@
+# =============================================================================
+# Gitignore for PneuSSLNet (Medical AI & Deep Learning Research Project)
+# Excludes bulky model weights, raw datasets, cache, and internal scratch files
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Deep Learning Model Checkpoints & Large Binary Weights (>100MB exceeds GitHub limits)
+# Note: Checkpoints are shared via Zenodo / HuggingFace model hub releases.
+# -----------------------------------------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.engine
+*.bin
+outputs/checkpoints/
+
+# -----------------------------------------------------------------------------
+# 2. Raw Medical Datasets, DICOM Files & Compressed Archives
+# -----------------------------------------------------------------------------
+dataset/
+datasets/
+data/
+raw_data/
+*.dcm
+*.dicom
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# -----------------------------------------------------------------------------
+# 3. Patient-Level Raw Prediction Dumps (Summaries preserved in outputs/tables/)
+# -----------------------------------------------------------------------------
+outputs/predictions/
+outputs/predictions/*.csv
+
+# -----------------------------------------------------------------------------
+# 4. Python Environment, Cache & Bytecode
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook Cache
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# -----------------------------------------------------------------------------
+# 5. Local Training Logs, Run Audits & Internal Scratch Files
+# -----------------------------------------------------------------------------
+*.log
+training_run.log
+pdf_audit.txt
+guidelines_text.txt
+START_TRAINING.bat
+check_progress.py
+update_tsp_template.py
+write_revised_manuscript.py
+rebuild_supplementary_latex.py
+write_supplementary_manuscript.py
+generate_supplementary_docx.py
+TSP_template_original_backup.tex
+scratch/
+Paper.pdf
+Supplementary.pdf
+
+# -----------------------------------------------------------------------------
+# 6. LaTeX Auxiliary Compilation Files
+# -----------------------------------------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.vrb
+*.run.xml
+*-blx.bib
+
+# -----------------------------------------------------------------------------
+# 7. IDE, Editor & Operating System Metadata
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini

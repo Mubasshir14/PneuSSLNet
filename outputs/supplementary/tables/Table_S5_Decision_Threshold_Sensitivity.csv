@@ -1,0 +1,8 @@
+Threshold,ResNet50-SimCLR F1,ResNet50-MoCo F1,ResNet50-BYOL F1,ResNet50-DINO F1,Clinical Implication
+0.2,95.69,95.23,94.68,96.0,High Recall / Screening
+0.3,96.03,95.61,95.08,96.32,High Recall / Screening
+0.4,95.89,95.61,95.32,96.26,Balanced Clinical Operation
+0.5,95.55,95.23,94.92,95.94,Balanced Clinical Operation
+0.6,95.2,94.85,94.52,95.62,Balanced Clinical Operation
+0.7,94.84,94.47,94.12,95.3,High Specificity / Confirmatory
+0.8,94.5,94.09,93.72,94.98,High Specificity / Confirmatory
