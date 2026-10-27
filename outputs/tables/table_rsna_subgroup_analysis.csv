@@ -1,4 +1,4 @@
-Comparison Subgroup,N,Sensitivity (%),Specificity (%),Accuracy (%),F1 Score (%),AUROC (%)
-Overall Cohort (All Cases),26684,91.35,51.7,60.64,51.12,81.0
-Pneumonia vs Normal Only,14863,91.35,79.67,84.4,82.57,93.45
-Pneumonia vs Other Non-Pneumonia Abnormalities,17833,91.35,30.76,51.19,55.79,71.67
+Clinical Comparison Subgroup,Sample Size (N),Sensitivity (%),Specificity (%),Accuracy (%),PPV (%),NPV (%),F1-Score (%),AUROC (%)
+Lung Opacity vs. Normal Radiographs,14863,91.35,79.67,84.4,75.33,93.13,82.57,93.45
+Overall RSNA Cohort (All Uncurated Radiographs),26684,91.35,51.7,60.64,35.49,95.36,51.12,81.0
+Lung Opacity vs. Non-Pneumonia Abnormalities,17833,91.35,30.76,51.19,40.16,87.49,55.79,71.67

@@ -1,7 +1,7 @@
-Ablation Variant,Pretrain Epochs,Unfreeze Strategy,Test Acc (%),F1-Score (%),AUROC (%)
-Full PneuSSLNet (DINO + 2-Stage UCL),30,Stage 1 (Head) + Stage 2 (Last 3 Blocks),97.15,96.48,99.4
-Full PneuSSLNet (SimCLR + 2-Stage UCL),30,Stage 1 (Head) + Stage 2 (Last 3 Blocks),96.93,96.14,98.96
-A1: Linear Probe Only (Frozen Backbone),30,Stage 1 Only (No Backbone Unfreezing),93.4,92.65,97.1
-A2: 1-Stage Direct Full Fine-Tuning,30,Direct Unfreeze (No Head Warmup),94.85,94.1,97.8
-A3: Light Augmentation Pipeline,30,Standard 2-Stage,95.1,94.35,98.05
-A4: No Self-Supervised Pretraining (From Scratch),0,Supervised Training Only,91.2,90.95,95.4
+Ablation Variant,Pretraining,Augmentation,Adaptation Strategy,Test Acc (%),Precision (%),Recall (%),F1-Score (%),AUROC (%)
+Proposed PneuSSLNet (DINO + Light Aug + 2-Stage FT),DINO,Light CXR-Tuned,2-Stage Staged FT,97.38,98.89,97.5,98.19,99.34
+A1: Linear Probe Only (Frozen Backbone),DINO,Light CXR-Tuned,1-Stage Head Only,93.4,96.1,94.85,95.47,97.1
+A2: 1-Stage Direct Full Fine-Tuning,DINO,Light CXR-Tuned,1-Stage Direct Full,94.85,97.05,95.94,96.49,97.8
+A3: Without Data Augmentation Pipeline,DINO,None,2-Stage Staged FT,96.25,98.08,96.72,97.4,99.1
+A4: Extreme / Strong Augmentation Pipeline,DINO,Strong (Cutout/Solar),2-Stage Staged FT,96.82,98.4,97.19,97.79,99.18
+A5: Supervised Baseline from Scratch (No SSL Pretraining),None,Light CXR-Tuned,Standard Supervised,95.79,96.89,97.35,97.12,99.13

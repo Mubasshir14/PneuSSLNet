@@ -1,6 +1,9 @@
-Cohort,Split,NORMAL,PNEUMONIA,Total,Percentage
-Internal Development Cohort (Kermany et al.),Train,1108,2991,4099,70.0%
-Internal Development Cohort (Kermany et al.),Validation,238,640,878,15.0%
-Internal Development Cohort (Kermany et al.),Locked Internal Test,237,642,879,15.0%
-External Validation (RSNA Challenge Primary),External Cohort,20672,6012,26684,100.0%
-External Validation (RSNA Strict Matched Subgroup),External Matched,8851,6012,14863,55.7%
+Cohort Name,Split Partition,Normal (n),Pneumonia (n),Total (N),Ratio (%),Designated Role in Protocol
+Primary Cohort (Kermany Pediatric CXR),Training Split,1108,2991,4099,70.0,SSL Pretraining & Supervised Adaptation
+Primary Cohort (Kermany Pediatric CXR),Validation Split,237,641,878,15.0,Checkpoint Selection (Macro-F1) & Threshold Calibration
+Primary Cohort (Kermany Pediatric CXR),Held-out Test Split,238,641,879,15.0,Locked Final Benchmark (Evaluated Strictly Once)
+Primary Cohort Total,Cohort Total,1583,4273,5856,100.0,Primary In-Domain Benchmark
+External Cohort (RSNA Challenge DICOM),Normal Radiographs,8851,0,8851,33.2,Cross-Center True Negative Control
+External Cohort (RSNA Challenge DICOM),Non-Pneumonia Abnormalities,11821,0,11821,44.3,Confounder Specificity Stress Test
+External Cohort (RSNA Challenge DICOM),Lung Opacity Cases,0,6012,6012,22.5,True Positive Clinical Generalization
+External Cohort Total,Cohort Total,20672,6012,26684,100.0,Zero-Shot Out-of-Distribution Validation
